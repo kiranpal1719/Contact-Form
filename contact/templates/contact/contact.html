@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <style>
+        body { font-family: Arial; max-width: 500px; margin: 50px auto; }
+        input, textarea { width: 100%; padding: 8px; margin: 5px 0 15px 0; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        .success { color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>Contact Us</h2>
+
+    {% if success %}
+        <p class="success">Sent Successfully</p>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label>{{ form.name.label }}</label>
+        {{ form.name }}
+
+        <label>{{ form.email.label }}</label>
+        {{ form.email }}
+
+        <label>{{ form.subject.label }}</label>
+        {{ form.subject }}
+
+        <label>{{ form.message.label }}</label>
+        {{ form.message }}
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</body>
+</html>
