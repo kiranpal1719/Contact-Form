@@ -58,5 +58,4 @@ python manage.py runserver
 - SQLite
 - HTML & CSS
 
-## Author
-Your Name Here
+
