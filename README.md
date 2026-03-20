@@ -9,6 +9,7 @@ their name, email, subject and message.
 - Messages saved in database
 - View all messages in admin panel
 
+```
 ## Project Structure
 CONTACTFORM/
 ├── contact/
@@ -24,6 +25,7 @@ CONTACTFORM/
 │   ├── settings.py
 │   ├── urls.py
 └── manage.py
+```
 
 ## Installation
 
